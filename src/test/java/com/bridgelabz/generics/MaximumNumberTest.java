@@ -33,4 +33,18 @@ public class MaximumNumberTest {
         Assert.assertEquals(1.3f, result, 0.01);
     }
 
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrueInString() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        String result = maximumNumber.maximumValueInString("abc","bcd","cde");
+        Assert.assertEquals("cde", result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrueInString1() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        String result = maximumNumber.maximumValueInString("bcd", "cde", "abc");
+        Assert.assertEquals("cde", result);
+    }
+
 }
