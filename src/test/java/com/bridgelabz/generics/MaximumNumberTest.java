@@ -19,13 +19,4 @@ public class MaximumNumberTest {
         Assert.assertEquals(30,result);
     }
 
-    @Test
-    public void readNumber_CheckMaximum_ReturnTrue2() {
-        MaximumNumber maximumNumber = new MaximumNumber();
-        int result = maximumNumber.maximumValueinInteger(30,20,10);
-        Assert.assertEquals(30, result);
-    }
-
-
-
 }
