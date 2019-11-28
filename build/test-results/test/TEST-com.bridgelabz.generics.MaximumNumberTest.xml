@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.generics.MaximumNumberTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:07:23" hostname="mohit-Inspiron-15-3567" time="0.003">
+<testsuite name="com.bridgelabz.generics.MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T13:18:50" hostname="mohit-Inspiron-15-3567" time="0.001">
   <properties/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrueInFloat1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.002"/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrueInString" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrueInFloat" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrue1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrueInString1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
-  <testcase name="readNumber_Checkmaximum_ReturnTrue" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueForInteger" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

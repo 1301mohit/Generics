@@ -47,4 +47,18 @@ public class MaximumNumberTest {
         Assert.assertEquals("cde", result);
     }
 
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrue() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        String result = maximumNumber.maximumValue("bcd", "cde", "abc");
+        Assert.assertEquals("cde", result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrueForInteger() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        int result = maximumNumber.maximumValue(1, 2, 3);
+        Assert.assertEquals(3, result);
+    }
+
 }

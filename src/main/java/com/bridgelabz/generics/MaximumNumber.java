@@ -2,7 +2,7 @@ package com.bridgelabz.generics;
 
 public class MaximumNumber {
 
-    public static Integer maximumValueinInteger(Integer number1, Integer number2, Integer number3) {
+    public Integer maximumValueinInteger(Integer number1, Integer number2, Integer number3) {
         Integer maximumNumber = number1;
         if(number2.compareTo(maximumNumber) > 0)
             maximumNumber = number2;
@@ -26,6 +26,15 @@ public class MaximumNumber {
             maximum = str2;
         if(str3.compareTo(maximum) > 0)
             maximum = str3;
+        return maximum;
+    }
+
+    public <E extends Comparable<E>> E maximumValue(E num1, E num2, E num3){
+        E maximum = num1;
+        if(num2.compareTo(maximum) > 0)
+            maximum = num2;
+        if(num3.compareTo(maximum) > 0)
+            maximum = num3;
         return maximum;
     }
 }
