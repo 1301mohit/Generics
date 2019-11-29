@@ -78,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MaximumNumberTest.readNumber_CheckMaximumInString">
+  <component name="RunManager" selected="Gradle.MaximumNumberTest">
     <configuration name="MaximumNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.generics.MaximumNumber" />
       <module name="PrintArrayInGenerics.main" />
@@ -167,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MaximumNumberTest.readNumber_CheckMaximumInString" />
         <item itemvalue="Gradle.MaximumNumberTest" />
+        <item itemvalue="Gradle.MaximumNumberTest.readNumber_CheckMaximumInString" />
         <item itemvalue="Application.Number" />
         <item itemvalue="Application.MaximumNumber" />
         <item itemvalue="Gradle.MaximumNumberTest.readNumber_CheckMaximum_ReturnTrueForInteger" />
