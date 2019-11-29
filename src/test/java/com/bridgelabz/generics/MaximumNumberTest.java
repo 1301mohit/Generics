@@ -8,14 +8,21 @@ public class MaximumNumberTest {
     @Test
     public void readNumber_Checkmaximum_ReturnTrue() {
         MaximumNumber maximumNumber = new MaximumNumber();
-        int result = maximumNumber.maximumValueinInteger(10, 20, 30);
+        int result = maximumNumber.maximumValueinInteger(30, 20, 10);
         Assert.assertEquals(30, result);
     }
 
     @Test
     public void readNumber_CheckMaximum_ReturnTrue1() {
         MaximumNumber maximumNumber = new MaximumNumber();
-        int result = maximumNumber.maximumValueinInteger(20,10,30);
+        int result = maximumNumber.maximumValueinInteger(20,30,10);
+        Assert.assertEquals(30,result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrue2() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        int result = maximumNumber.maximumValueinInteger(10, 20 , 30);
         Assert.assertEquals(30,result);
     }
 
@@ -23,14 +30,21 @@ public class MaximumNumberTest {
     public void readNumber_CheckMaximum_ReturnTrueInFloat() {
         MaximumNumber maximumNumber = new MaximumNumber();
         float result = maximumNumber.maximumValueInFloat(1.1f, 1.2f, 1.3f);
-        Assert.assertEquals(1.3, result, 0.01);
+        Assert.assertEquals(1.3f, result, 0.01f);
     }
 
     @Test
     public void readNumber_CheckMaximum_ReturnTrueInFloat1() {
         MaximumNumber maximumNumber = new MaximumNumber();
-        float result = maximumNumber.maximumValueInFloat(1.2f,1.1f,1.3f);
-        Assert.assertEquals(1.3f, result, 0.01);
+        float result = maximumNumber.maximumValueInFloat(1.2f,1.3f,1.1f);
+        Assert.assertEquals(1.3f, result, 0.01f);
+    }
+
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrueInFloat2() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        float result = maximumNumber.maximumValueInFloat(1.3f,1.2f,1.1f);
+        Assert.assertEquals(1.3f, result, 0.01f);
     }
 
     @Test
@@ -48,9 +62,16 @@ public class MaximumNumberTest {
     }
 
     @Test
-    public void readNumber_CheckMaximum_ReturnTrue() {
+    public void readNumber_CheckMaximum_ReturnTrueInString2() {
         MaximumNumber maximumNumber = new MaximumNumber();
-        String result = maximumNumber.maximumValue("bcd", "cde", "abc");
+        String result = maximumNumber.maximumValueInString("cde", "bcd", "abc");
+        Assert.assertEquals("cde", result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximum_ReturnTrueForString() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        String result = maximumNumber.maximumValue("cde", "bcd", "abc");
         Assert.assertEquals("cde", result);
     }
 
@@ -62,17 +83,24 @@ public class MaximumNumberTest {
     }
 
     @Test
+    public void readNumber_CheckMaximum_ReturnTrueForFloat() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        float result = maximumNumber.maximumValue(1.1f, 2.1f, 3.1f);
+        Assert.assertEquals(3.1f, result, 0.01);
+    }
+
+    @Test
     public void readNumber_CheckMaximumInInteger() {
         Number number = new Number(10, 20, 30);
-        Integer result = (Integer)number.maximumValue();
-        Assert.assertEquals((Integer) 30, result);
+        int result = (int)number.maximumValue();
+        Assert.assertEquals( 30, result);
     }
 
     @Test
     public void readNumber_CheckMaximumInFloat() {
         Number number = new Number(10.1f, 10.2f, 10.3f);
-        Float result = (Float)number.maximumValue();
-        Assert.assertEquals((Float) 10.3f, result);
+        float result = (float)number.maximumValue();
+        Assert.assertEquals( 10.3f, result, 0.01);
     }
 
     @Test
