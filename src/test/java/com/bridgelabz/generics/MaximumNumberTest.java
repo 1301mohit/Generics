@@ -110,4 +110,11 @@ public class MaximumNumberTest {
         Assert.assertEquals("cde", result);
     }
 
+    @Test
+    public void readNumber_CheckMaximum() {
+        Number number = new Number();
+        int result = (int)number.maximumValue(10, 20, 30, 40, 50, 60);
+        Assert.assertEquals(60, result);
+    }
+
 }

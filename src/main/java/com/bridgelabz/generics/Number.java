@@ -1,10 +1,18 @@
 package com.bridgelabz.generics;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Number<X extends Comparable> {
 
     X number1;
     X number2;
     X number3;
+    X array[];
+
+    public Number() {
+
+    }
 
     public Number(X number1, X number2, X number3) {
         this.number1 = number1;
@@ -24,5 +32,11 @@ public class Number<X extends Comparable> {
 
     public <X> void printMaximum(X maxValue) {
         System.out.println("Maximum value:"+maxValue);
+    }
+
+    public <X extends Comparable<X>> X maximumValue(X ... num){
+        int i = 0;
+        Arrays.sort(num);
+        return num[num.length - 1];
     }
 }
