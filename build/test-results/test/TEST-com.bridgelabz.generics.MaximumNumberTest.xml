@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.generics.MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T13:18:50" hostname="mohit-Inspiron-15-3567" time="0.001">
+<testsuite name="com.bridgelabz.generics.MaximumNumberTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-11-29T07:16:13" hostname="mohit-Inspiron-15-3567" time="0.009">
   <properties/>
-  <testcase name="readNumber_CheckMaximum_ReturnTrueForInteger" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="readNumber_CheckMaximumInInteger" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.003"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrue" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.001"/>
+  <testcase name="readNumber_CheckMaximumInFloat" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueInFloat1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueInString" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueInFloat" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximumInString" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrue1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueInString1" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_Checkmaximum_ReturnTrue" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <testcase name="readNumber_CheckMaximum_ReturnTrueForInteger" classname="com.bridgelabz.generics.MaximumNumberTest" time="0.0"/>
+  <system-out><![CDATA[Maximum value:30
+Maximum value:10.3
+Maximum value:cde
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

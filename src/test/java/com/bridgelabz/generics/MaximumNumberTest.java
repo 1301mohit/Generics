@@ -61,4 +61,25 @@ public class MaximumNumberTest {
         Assert.assertEquals(3, result);
     }
 
+    @Test
+    public void readNumber_CheckMaximumInInteger() {
+        Number number = new Number(10, 20, 30);
+        Integer result = (Integer)number.maximumValue();
+        Assert.assertEquals((Integer) 30, result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximumInFloat() {
+        Number number = new Number(10.1f, 10.2f, 10.3f);
+        Float result = (Float)number.maximumValue();
+        Assert.assertEquals((Float) 10.3f, result);
+    }
+
+    @Test
+    public void readNumber_CheckMaximumInString() {
+        Number number = new Number("abc", "bcd", "cde");
+        String result = (String)number.maximumValue();
+        Assert.assertEquals("cde", result);
+    }
+
 }
